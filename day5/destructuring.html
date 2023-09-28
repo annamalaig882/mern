@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//object destructring
+const user ={
+    name:"annamalai",
+    place:"chennai",
+    job:"ship",
+    salary:"10lpa"
+}
+console.log(user);
+
+console.log(user.name);
+
+console.log(user["job"]);
+
+
+const{name,place,job,salary}=user
+
+console.log(name,place,job,salary);
+
+//array destructring
+
+let array=["hello","world","guvi","geek"]
+let [fname,lname,mname,random]=array
+console.log(fname);
+console.log(lname);
+console.log(mname);
+console.log(random);
+//console.log(array);
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //4 steps
+        //1.create xml object by using new keyword
+        //2.opening a connection => 3parameters(1.http methoid,2.api,3.true(optional)to handle the error)
+        //3.sending the request // initiate the connection
+        //4.server response(json formate . parse)
+
+
+        var request = new XMLHttpRequest();
+
+request.open("GET","https://restcountries.com/v3.1/all",true) 
+
+ request.send();
+
+ request.onload=function(){
+
+    var data = JSON.parse(request.response)
+console.log(data)
+console.log(data[0].area)
+console.log(data[0].name)
+console.log(data[0].population)
+
+//for loop
+for(i=0; i<data.length; i++){
+console.log(data[i].name)
+}
+//for of llop
+    for(var obj of data){ 
+        console.log(obj.population)
+}
+
+
+
+
+        }
+
+
+
+
+
+    
+
+    </script>
+    
+</body>
+</html>
