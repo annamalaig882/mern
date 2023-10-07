@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+var arr=[1,2,3,4,5]
+//without acc
+var anna=arr.reduce((acc,Element)=>acc+Element)
+console.log(anna)
+
+//with acc
+
+var anna=arr.reduce((acc,Element)=>acc+Element,100)
+console.log(anna)
+
+
+//print sum of all marks using reduce
+var student=[{  
+    name:"anna",
+    mark:50
+},
+{
+    name:"pasu",
+    mark:60
+},
+{
+    name:"mani",
+    mark:90
+
+}
+
+]
+var sum=student.reduce((acc,Element)=>acc+Element.mark,0)
+console.log(sum);
+ </script>   
+
+    
+</body>
+</html> 

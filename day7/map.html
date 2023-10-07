@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+var arr=[1,2,3,4,5]
+console.log(arr);
+
+//multiple all the element in the array by  2
+
+var result =arr.map((element)=>element*2)
+console.log(result);
+
+
+//increase the nmarks by 10
+
+var student=[{
+    name:"anna",
+    mark:50
+},
+{
+    name:"pasu",
+    mark:60
+},
+{
+    name:"mani",
+    mark:90
+
+}
+
+]
+
+var result1=student.map((element)=>element.mark+10)
+
+console.log(result1);
+
+var result1=student.map((element)=>element.name+10)
+
+console.log(result1);
+
+var result1=student.map((element)=>element.name="thulasi")
+
+console.log(result1);
+
+//NUMBER
+
+
+var newArray=arr.map(Number)
+console.log(newArray);
+
+var arr1=[1,4,9,10]
+var result = arr1.map((Element)=> Math.sqrt(Element).toFixed(3));
+console.log(result);
+
+
+    </script>
+</body>
+</html>

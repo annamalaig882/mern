@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+var arr=[1,2,3,4,5,6,7,8,9,10,11]
+//console.log(arr);
+
+//print odd and even number in  array
+
+var result =arr.filter((element)=>element%2==0)
+console.log(result);
+
+
+var result =arr.filter((element)=>element%2==1)
+console.log(result);
+
+
+//or
+
+
+var result =arr.filter((element)=>element%2!==0)
+console.log(result);
+
+//== comparison
+// ==== comparison along with datatypes
+
+//word length<6 filter
+
+var words =["guvi","network","geek","private","itd","chennai"]
+
+var result =words.filter((element)=>element.length < 6)
+console.log(result);
+
+//print the mark >50
+
+var student=[{
+    name:"anna",
+    mark:51
+},
+{
+    name:"pasu",
+    mark:60
+},
+{
+    name:"mani",
+    mark:90
+
+}
+
+]
+
+var result =student.filter((element)=>element.mark >50)
+console.log(result);
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
